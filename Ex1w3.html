@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semantics</title>
 </head>
+
 <body>
-    <header><h2>Get in touch with us by filling contact form below</h2></header>
+    <header>
+        <h2>Get in touch with us by filling contact form below</h2>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
     <form method="post">
-        <span><input type="text" required placeholder="*Enter your full name">
-        <input type="email" required placeholder="*Enter your email address">
+        <section><span><input type="text" required placeholder="*Enter your full name">
+            <input type="email" required placeholder="*Enter your email address">
         </span>
         <p><input type="text" required placeholder="*Enter your subject"></p>
         <p><textarea required placeholder="*Your message here" cols="45" rows="10"></textarea></p>
-        <p><button type="submit">Send message</button> *Please fill all require form field, thanks!</p>
+        <p><button type="submit">Send message</button> *Please fill all require form field, thanks!</p></section>
+        
     </form>
     <footer>
         <h3>Contact Info</h3>
@@ -23,5 +34,38 @@
             <li><a href="contactto:+18001231234">+1 800 123 1234</a></li>
         </ul>
     </footer>
+    <style>
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav{
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a{
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        main{
+            padding: 20px;
+        }
+        section{
+            margin: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        footer{
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
 </body>
+
 </html>
